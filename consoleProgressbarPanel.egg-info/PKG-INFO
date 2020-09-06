@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: consoleProgressbarPanel
+Version: 0.1.7
+Summary: a simple console progress bar panel.
+Home-page: https://github.com/bubblecode/console-progressbar-panel
+Author: bubblecode
+Author-email: bubblecode@outlook.com
+License: MIT Licence
+Description: UNKNOWN
+Keywords: pip,progress bar,progress,console
+Platform: any
