@@ -49,3 +49,60 @@ for i in range(1, len(pb)):
 |[================----] 8/10 |
 |____________________________|
 ```
+
+## In addition, we encapsulated the panels that make up the progress bar into components
+------
+You can use these components to customize your own panels.
+### COM_HEADER_LINE(inner_width: int)
+> This component is usually used to form the head of the console panel.
+```python
+com_header = consoleProgressbarPanel.COM_HEADER_LINE(30)
+print(com_header)
+```
+```shell
+.______________________________.
+```
+### COM_MARK_SPLIT(inner_width: int, mark=' ')
+> This component is usually used to fill the console panel.
+ - you can create a blank area
+```python
+com_blank = consoleProgressbarPanel.COM_MARK_SPLIT(25)
+```
+```shell
+|                         |
+```
+ - or you can also provide a 'mark'
+```python
+com_marksp = consoleProgressbarPanel.COM_MARK_SPLIT(25, '*')
+print(com_marksp)
+```
+```shell
+|*************************|
+```
+### COM_MODULE_SPLIT_LINE(inner_width: int, name: str)
+> This component is usually used to divide the panel into many different modules.
+```python
+com_split = consoleProgressbarPanel.COM_MODULE_SPLIT_LINE(25, 'split')
+print(com_split)
+```
+```shell
+|----------split----------|
+```
+### COM_STATIC_INFO(inner_width: int, key: str, value: any)
+> You can use this component to display some constant information (such as model hyperparameters).
+```python
+com_info = consoleProgressbarPanel.COM_STATIC_INFO(25, 'param1', '1.414')
+print(com_info)
+```
+```shell
+| param1 1.414            |
+```
+### COM_INFORMATION(inner_width: int)
+> You can use this component to display some information that changes in real time as the progress bar changes.
+```python
+com_monite = consoleProgressbarPanel.COM_INFORMATION(25)
+print(com_monite.update('param2', 85))
+```
+```shell
+| param2 85               |
+```
