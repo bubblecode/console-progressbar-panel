@@ -1,5 +1,5 @@
 # console-progressbar-panel
-![PyPI](https://img.shields.io/pypi/v/consoleProgressbaPanel)
+![PyPI](https://img.shields.io/pypi/v/consoleProgressbarPanel)
 ![PyPI - License](https://img.shields.io/pypi/l/consoleProgressbarPanel?style=plastic)
 ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/bubblecode/console-progressbar-panel)
 ![GitHub last commit](https://img.shields.io/github/last-commit/bubblecode/console-progressbar-panel)
