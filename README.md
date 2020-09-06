@@ -21,7 +21,9 @@ $ pip install consoleProgressbarPanel
 ### example
 ```python
 import time
-pb = ProgressBar(name='Model',
+from consoleProgressbarPanel import consoleProgressbarPanel
+pb = consoleProgressbarPanel.ProgressBar(
+                 name='Model',
                  total_length=10, 
                  inner_width=30, 
                  moniter=['mma','mmb'], 
