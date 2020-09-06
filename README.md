@@ -5,6 +5,10 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/bubblecode/console-progressbar-panel)
 
 A simple Python console progress bar
+### install
+```shell
+$ pip install consoleProgressbarPanel
+```
 ### class ProgressBar(name, total_length, inner_width=29, moniter=[], **kwargs)
  - **name**: The name of the progress bar panel (e.g 'New Task')
  - **total_length**: Maximum iteration value (e.g 10)
